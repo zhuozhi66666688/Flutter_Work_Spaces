@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutterproj/net/http/core/hi_net.dart';
+import 'package:flutterproj/net/http/request/test_request.dart';
+
+import 'net/http/core/hi_error.dart';
 
 void main() {
   runApp(const MyApp());
@@ -56,7 +60,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
-  void _incrementCounter() {
+  Future<void> _incrementCounter() async {
     setState(() {
       // This call to setState tells the Flutter framework that something has
       // changed in this State, which causes it to rerun the build method below
@@ -65,6 +69,21 @@ class _MyHomePageState extends State<MyHomePage> {
       // called again, and so nothing would appear to happen.
       _counter++;
     });
+    try {
+      var request = TestRequest();
+      request
+          .add("aa", "aa")
+          .add("bb", "bb")
+          .add("requestPrams", "requestPrams--");
+      var response = await HiNet.getInstance().fire(request);
+      printL("response=====>$response");
+    } on NeedLogin catch (e) {
+      printL(e);
+    } on NeedAuth catch (e) {
+      printL(e);
+    } on HiNetError catch (e) {
+      printL(e);
+    }
   }
 
   @override
@@ -84,6 +103,44 @@ class _MyHomePageState extends State<MyHomePage> {
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
+        leading: IconButton(
+          icon: const Icon(Icons.menu),
+          onPressed: () {
+            // TRY THIS: Change the onPressed callback to show a snackbar.
+            ScaffoldMessenger.of(
+              context,
+            ).showSnackBar(const SnackBar(content: Text('This is a snackbar')));
+          },
+        ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.search),
+            onPressed: () {
+              // TRY THIS: Change the onPressed callback to show a dialog.
+              showDialog(
+                context: context,
+                builder: (context) {
+                  return const AlertDialog(
+                    title: Text('This is an alert'),
+                    content: Text('This is the content of the alert'),
+                  );
+                },
+              );
+            },
+          ),
+          IconButton(
+            onPressed: () {
+              // TRY THIS: Change the onPressed callback to show a bottom sheet.
+              showModalBottomSheet(
+                context: context,
+                builder: (context) {
+                  return const Text('This is a bottom sheet');
+                },
+              );
+            },
+            icon: Icon(Icons.more_horiz),
+          ),
+        ],
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
@@ -104,7 +161,9 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text('You have pushed the button this many times:'),
+            const Text(
+              'You have pushed the button this many times: hello word',
+            ),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
