@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       home: FutureBuilder<dynamic>(
         future: HiCache.preInit(),
         builder: (BuildContext context, AsyncSnapshot<dynamic> snapshot) {
-          ScreenHelper.init(context);//初始化屏幕适配工具
+          ScreenHelper.init(context); //初始化屏幕适配工具
           if (snapshot.connectionState == ConnectionState.done) {
             if (LoginDao.getBoardingPass() == null) {
               return const LoginPage();
