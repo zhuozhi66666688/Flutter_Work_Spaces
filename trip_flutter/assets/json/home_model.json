@@ -16,9 +16,52 @@
       "icon": "https://picsum.photos/100/100?random=1",
       "title": "景点门票",
       "url": "https://m.ctrip.com/webapp/ticket/",
-      "statusBarColor": "#19A0F0",
+      "statusBarColor": "19A0F0",
       "hideAppBar": false
+    },
+    {
+      "icon": "https://picsum.photos/100/100?random=3",
+      "title": "酒店预订",
+      "url": "https://m.ctrip.com/webapp/hotel/",
+      "statusBarColor": "19A0F0",
+      "hideAppBar": false
+    },
+    {
+      "icon": "https://picsum.photos/100/100?random=3",
+      "title": "旅游团购",
+      "url": "https://m.ctrip.com/webapp/tourvacations/",
+      "statusBarColor": "19A0F0",
+      "hideAppBar": false
+    },
+    {
+      "icon": "https://picsum.photos/100/100?random=4",
+      "title": "美食林",
+      "url": "https://m.ctrip.com/webapp/ticket/",
+      "statusBarColor": "19A0F0",
+      "hideAppBar": false
+    },
+    {
+      "icon": "https://picsum.photos/100/100?random=5",
+      "title": "休闲娱乐",
+      "url": "https://m.ctrip.com/webapp/ticket/",
+      "statusBarColor": "19A0F0",
+      "hideAppBar": false
+    },
+    {
+      "icon": "https://picsum.photos/100/100?random=6",
+      "title": "丽人",
+      "url": "https://m.ctrip.com/webapp/ticket/",
+      "statusBarColor": "19A0F0",
+      "hideAppBar": false
+    },
+    {
+      "icon": "https://picsum.photos/100/100?random=7",
+      "title": "周边游",
+      "url": "https://m.ctrip.com/webapp/ticket/",
+      "statusBarColor": "19A0F0",
+      "hideAppBar": true
     }
+
   ],
   "gridNav": {
     "hotel": {
@@ -119,7 +162,56 @@
       "icon": "https://picsum.photos/100/100?random=7",
       "title": "民宿客栈",
       "url": "https://m.ctrip.com/webapp/inn/"
-    }
+    },
+    {
+      "icon": "https://picsum.photos/100/100?random=8",
+      "title": "特价酒店",
+      "url": "https://m.ctrip.com/webapp/hotel/lastminute/"
+    },
+    {
+      "icon": "https://picsum.photos/100/100?random=9",
+      "title": "公寓",
+      "url": "https://m.ctrip.com/webapp/vacations/overseas/"
+    },
+    {
+      "icon": "https://picsum.photos/100/100?random=10",
+      "title": "客栈",
+      "url": "https://m.ctrip.com/webapp/inn/"
+    },
+    {
+      "icon": "https://picsum.photos/100/100?random=11",
+      "title": "海外酒店",
+      "url": "https://m.ctrip.com/webapp/hotel/oversea/"
+    },
+    {
+      "icon": "https://picsum.photos/100/100?random=12",
+      "title": "旅游团购",
+      "url": "https://m.ctrip.com/webapp/tourvacations/"
+    },
+    {
+      "icon": "https://picsum.photos/100/100?random=13",
+      "title": "机票",
+      "url": "https://m.ctrip.com/webapp/flight/"
+    },
+    {
+      "icon": "https://picsum.photos/100/100?random=14",
+      "title": "火车票",
+      "url": "https://m.ctrip.com/webapp/train/"
+    },
+    {
+      "icon": "https://picsum.photos/100/100?random=15",
+      "title": "汽车票",
+      "url": "https://m.ctrip.com/webapp/bus/"
+    },
+    {
+      "icon": "https://picsum.photos/100/100?random=16",
+      "title": "旅游保险",
+      "url": "https://m.ctrip.com/webapp/insurance/"
+    },
+    {
+      "icon": "https://picsum.photos/100/100?random=17",
+      "title": "签证",
+      "url": "https://m.ctrip.com/webapp/visa/"}
   ],
   "salesBox": {
     "icon": "https://picsum.photos/100/100?random=8",

@@ -1,11 +1,12 @@
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
-import 'package:flutter/services.dart' show rootBundle;
 import 'package:http/http.dart' as http;
 import 'package:trip_flutter/dao/header_util.dart';
 import 'package:trip_flutter/model/home_model.dart';
 import 'package:trip_flutter/util/navigator_util.dart';
+
+import 'mock_dao.dart';
 
 ///首页大接口
 class HomeDao {
@@ -29,23 +30,7 @@ class HomeDao {
   }
 
   static Future<HomeModel?> fetchMock() async {
-    try {
-      // 读取本地JSON文件
-      final jsonString =
-          await rootBundle.loadString('assets/json/home_model.json');
-      // 解析JSON
-      final jsonResult = json.decode(jsonString);
-      // 转换为HomeModel对象
-      return HomeModel.fromJson(jsonResult);
-    } catch (e) {
-      debugPrint('Error reading mock data: $e');
-      return null;
-    } finally {
-      // try {
-      //   HomeDao.fetch();
-      // } catch (e) {
-      //   debugPrint('Error reading mock data: $e');
-      // }
-    }
+    return MockDao.getMockData<HomeModel>(
+        'home_model.json', HomeModel.fromJson);
   }
 }

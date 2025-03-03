@@ -75,7 +75,7 @@ class _SearchPageState extends State<SearchPage> {
 
   void _onTextChange(String value) async {
     try {
-      var result = await SearchDao.fetch(value);
+      var result = await SearchDao.fetchMock(value);
       if (result == null) return;
       //只有当，当前输入的内容和服务端返回的内容一致的时候才渲染
       if (result.keyword == value) {

@@ -7,6 +7,7 @@ import 'package:trip_flutter/util/navigator_util.dart';
 
 import '../model/travel_category_model.dart';
 import '../model/travel_tab_model.dart';
+import 'mock_dao.dart';
 
 ///旅拍模块Dao
 class TravelDao {
@@ -27,6 +28,12 @@ class TravelDao {
       }
       throw Exception(bodyString);
     }
+  }
+
+  static Future<TravelCategoryModel?> fetchTravelCategoryModelMock() async {
+    TravelCategoryModel? model = await MockDao.getMockData<TravelCategoryModel>(
+        'travel_category_model.json', TravelCategoryModel.fromJson);
+    return model;
   }
 
   ///获取旅拍类别下的数据
@@ -51,5 +58,12 @@ class TravelDao {
       }
       throw Exception(bodyString);
     }
+  }
+
+  static Future<TravelTabModel?> fetchTravelTabModelMock(
+      String groupChannelCode, int pageIndex, int pageSize) async {
+    TravelTabModel? model = await MockDao.getMockData<TravelTabModel>(
+        'travel_tab_model.json', TravelTabModel.fromJson);
+    return model;
   }
 }

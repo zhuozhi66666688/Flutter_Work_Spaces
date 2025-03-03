@@ -110,7 +110,7 @@ class _LoginPageState extends State<LoginPage> {
     try {
       var result = LoginDao.login(userName: userName!, password: password!);
       print('登录成功');
-      NavigatorUtil.goToHome(context);
+      NavigatorUtil.goToTabViGator(context);
     } catch (e) {
       print(e);
     }

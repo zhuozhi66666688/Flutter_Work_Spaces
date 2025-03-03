@@ -6,6 +6,7 @@ import 'package:trip_flutter/dao/header_util.dart';
 import 'package:trip_flutter/util/navigator_util.dart';
 
 import '../model/search_model.dart';
+import 'mock_dao.dart';
 
 ///搜索接口
 class SearchDao {
@@ -27,5 +28,12 @@ class SearchDao {
       }
       throw Exception(bodyString);
     }
+  }
+
+  static Future<SearchModel?> fetchMock(String text) async {
+    SearchModel? model = await MockDao.getMockData<SearchModel>(
+        'search_model.json', SearchModel.fromJson);
+    model?.keyword = text;
+    return model;
   }
 }

@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:flutter/material.dart';
 import 'package:trip_flutter/model/home_model.dart';
 import 'package:trip_flutter/util/navigator_util.dart';
 import 'package:trip_flutter/util/screen_adapter_helper.dart';
@@ -68,8 +68,8 @@ class _BannerWidgetState extends State<BannerWidget> {
             margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 4),
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color:
-                  (Colors.white).withOpacity(_current == entry.key ? 0.9 : 0.4),
+              color: (Colors.white).withAlpha(
+                  (255.0 * (_current == entry.key ? 0.9 : 0.4)).round()),
             ),
           ),
         );

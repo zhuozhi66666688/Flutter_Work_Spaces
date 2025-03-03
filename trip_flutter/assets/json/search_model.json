@@ -11,6 +11,7 @@
       "districtname": "三亚市",
       "url": "https://picsum.photos/id/2/200"
     },
+
     {
       "code": "AB002",
       "word": "海南",
@@ -19,6 +20,17 @@
       "zonename": "西海岸",
       "star": "4",
       "districtname": "海口市",
+      "url": "https://picsum.photos/id/5/50"
+    },
+
+    {
+      "code": "AB001",
+      "word": "北京",
+      "type": "city",
+      "price": "￥1000",
+      "zonename": "东城区",
+      "star": "3",
+      "districtname": "北京市",
       "url": "https://picsum.photos/id/5/50"
     }
   ]

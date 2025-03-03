@@ -67,7 +67,7 @@ class GridNavWidget extends StatelessWidget {
           alignment: AlignmentDirectional.topCenter,
           children: [
             Image.network(model.icon!,
-                fit: BoxFit.contain,
+                fit: BoxFit.fill,
                 height: 88,
                 width: 121,
                 alignment: AlignmentDirectional.bottomEnd),

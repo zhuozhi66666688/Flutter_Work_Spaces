@@ -45,7 +45,7 @@ class _TravelPgeState extends State<TravelPge> with TickerProviderStateMixin {
   void initState() {
     super.initState();
     _controller = TabController(length: 0, vsync: this);
-    TravelDao.getCategory().then((TravelCategoryModel? model) {
+    TravelDao.fetchTravelCategoryModelMock().then((TravelCategoryModel? model) {
       //TabBar空白的问题
       _controller = TabController(length: model?.tabs.length ?? 0, vsync: this);
       setState(() {

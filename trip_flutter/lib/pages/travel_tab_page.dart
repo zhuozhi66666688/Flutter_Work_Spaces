@@ -73,8 +73,8 @@ class _TravelTabPageState extends State<TravelTabPage>
       pageIndex = 1;
     }
     try {
-      TravelTabModel? model =
-          await TravelDao.getTravels(widget.groupChannelCode, pageIndex, 10);
+      TravelTabModel? model = await TravelDao.fetchTravelTabModelMock(
+          widget.groupChannelCode, pageIndex, 10);
       List<TravelItem> items = _filterItems(model?.list);
       if (loadMore && items.isEmpty) {
         pageIndex--;

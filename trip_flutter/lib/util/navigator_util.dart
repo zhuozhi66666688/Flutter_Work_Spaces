@@ -4,6 +4,8 @@ import 'package:trip_flutter/pages/home_page.dart';
 import 'package:trip_flutter/pages/login_page.dart';
 import 'package:trip_flutter/widget/hi_webview.dart';
 
+import '../navigator/tab_navigator.dart';
+
 class NavigatorUtil {
   ///用于在获取不到context的地方，如dao中跳转页面时使用，需要在TabNavigator赋值
   ///注意：若TabNavigator被销毁，_context将无法使用
@@ -24,6 +26,13 @@ class NavigatorUtil {
     //跳转到主页并不让返回
     Navigator.pushReplacement(
         context, MaterialPageRoute(builder: (context) => const HomePage()));
+  }
+
+  ///跳转到首页
+  static goToTabViGator(BuildContext context) {
+    //跳转到主页并不让返回
+    Navigator.pushReplacement(
+        context, MaterialPageRoute(builder: (context) => const TabNavigator()));
   }
 
   ///跳转到登录页
