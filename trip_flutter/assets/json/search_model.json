@@ -1,0 +1,25 @@
+{
+  "code": 200,
+  "data": [
+    {
+      "code": "AB001",
+      "word": "三亚",
+      "type": "city",
+      "price": "￥2000",
+      "zonename": "海棠湾",
+      "star": "5",
+      "districtname": "三亚市",
+      "url": "https://picsum.photos/id/2/200"
+    },
+    {
+      "code": "AB002",
+      "word": "海南",
+      "type": "province",
+      "price": "￥1500",
+      "zonename": "西海岸",
+      "star": "4",
+      "districtname": "海口市",
+      "url": "https://picsum.photos/id/5/50"
+    }
+  ]
+}

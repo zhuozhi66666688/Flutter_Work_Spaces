@@ -1,0 +1,127 @@
+{
+  "total": 10,
+  "list": [
+    {
+      "type": 1,
+      "article": {
+        "articleId": 1001,
+        "productType": 1,
+        "sourceType": 1,
+        "articleTitle": "三亚旅游攻略",
+        "content": "三亚旅游攻略详细内容",
+        "contentWithoutCtag": "三亚旅游攻略详细内容无标签版",
+        "author": {
+          "authorId": 2001,
+          "nickName": "旅行达人",
+          "clientAuth": "认证用户",
+          "userUrl": "https://picsum.photos/id/1/200",
+          "jumpUrl": "https://picsum.photos/id/2/200",
+          "coverImage": {
+            "dynamicUrl": "https://picsum.photos/id/3/200",
+            "originalUrl": "https://picsum.photos/id/4/400"
+          },
+          "qualification": "旅游博主",
+          "tag": "达人",
+          "followCount": 5000,
+          "vIcon": "https://picsum.photos/id/5/50",
+          "levelValue": 5,
+          "levelValueText": "LV5",
+          "identityDesc": "旅游达人",
+          "isStarAccount": true
+        },
+        "images": [
+          {
+            "imageId": 3001,
+            "dynamicUrl": "https://picsum.photos/id/6/800/600",
+            "originalUrl": "https://picsum.photos/id/7/1600/900",
+            "width": 1080.0,
+            "height": 720.0,
+            "mediaType": 1,
+            "lat": 18.252847,
+            "lon": 109.511909,
+            "isWaterMarked": true
+          }
+        ],
+        "coverGIF": {
+          "originalUrl": "https://picsum.photos/id/8/400/300"
+        },
+        "hasVideo": true,
+        "video": {
+          "videoId": 4001,
+          "coverImageUrl": "https://picsum.photos/id/9/1920/1080",
+          "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+          "mediaType": 2,
+          "width": 1920.0,
+          "height": 1080.0,
+          "durationSeconds": 180
+        },
+        "readCount": 10000,
+        "likeCount": 500,
+        "commentCount": 100,
+        "shareCount": 50,
+        "urls": [
+          {
+            "version": "1.0",
+            "appUrl": "https://picsum.photos/id/10/200",
+            "h5Url": "https://picsum.photos/id/11/200",
+            "wxUrl": "https://picsum.photos/id/12/200"
+          }
+        ],
+        "tags": [
+          {
+            "tagId": 5001,
+            "tagName": "海滩",
+            "tagLevel": 1,
+            "parentTagId": 0,
+            "source": 1,
+            "sortIndex": 1
+          }
+        ],
+        "relatedTopics": [
+          {
+            "topicId": 6001,
+            "topicName": "三亚必去景点",
+            "type": 1
+          }
+        ],
+        "pois": [
+          {
+            "poiType": 1,
+            "poiId": 7001,
+            "poiName": "大东海",
+            "businessId": 8001,
+            "districtId": 9001,
+            "districtName": "三亚市",
+            "poiExt": {
+              "h5Url": "https://picsum.photos/id/13/200",
+              "appUrl": "https://picsum.photos/id/14/200"
+            },
+            "source": 1,
+            "isMain": 1,
+            "isInChina": true,
+            "countryName": "中国",
+            "districtENName": "Sanya"
+          }
+        ],
+        "publishTime": "2024-03-03 12:00:00",
+        "publishTimeDisplay": "2024-03-03",
+        "shootTime": "2024-03-01 10:00:00",
+        "shootTimeDisplay": "2024-03-01",
+        "level": 5,
+        "distanceText": "500m",
+        "isLike": false,
+        "imageCounts": 9,
+        "isCollected": false,
+        "collectCount": 200,
+        "articleStatus": 1,
+        "shareInfo": {
+          "imageUrl": "https://picsum.photos/id/15/800/600",
+          "shareTitle": "三亚旅游攻略分享",
+          "shareContent": "分享内容",
+          "platForm": "WeChat",
+          "token": "share_token_123"
+        }
+      }
+    }
+  ]
+}

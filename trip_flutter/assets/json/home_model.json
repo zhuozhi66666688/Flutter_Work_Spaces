@@ -1,0 +1,158 @@
+{
+  "config": {
+    "searchUrl": "https://m.ctrip.com/html5/"
+  },
+  "bannerList": [
+    {
+      "icon": "https://picsum.photos/800/400",
+      "title": "热门活动",
+      "url": "https://m.ctrip.com/webapp/you/",
+      "statusBarColor": "#2096F3",
+      "hideAppBar": false
+    }
+  ],
+  "localNavList": [
+    {
+      "icon": "https://picsum.photos/100/100?random=1",
+      "title": "景点门票",
+      "url": "https://m.ctrip.com/webapp/ticket/",
+      "statusBarColor": "#19A0F0",
+      "hideAppBar": false
+    }
+  ],
+  "gridNav": {
+    "hotel": {
+      "startColor": "195956",
+      "endColor": "199B4D",
+      "mainItem": {
+        "icon": "https://picsum.photos/600/430?random=9",
+        "title": "酒店",
+        "url": "https://m.ctrip.com/webapp/hotel/",
+        "statusBarColor": "19A0F0"
+      },
+      "item1": {
+        "icon": "https://picsum.photos/100/100?random=3",
+        "title": "海外酒店",
+        "url": "https://m.ctrip.com/webapp/hotel/oversea/"
+      },
+      "item2": {
+        "icon": "https://picsum.photos/100/100?random=4",
+        "title": "特价酒店",
+        "url": "https://m.ctrip.com/webapp/hotel/discount/"
+      },
+      "item3": {
+        "icon": "https://picsum.photos/100/100?random=3",
+        "title": "海外酒店",
+        "url": "https://m.ctrip.com/webapp/hotel/oversea/"
+      },
+      "item4": {
+        "icon": "https://picsum.photos/100/100?random=4",
+        "title": "特价酒店",
+        "url": "https://m.ctrip.com/webapp/hotel/discount/"
+      }
+    },
+    "flight": {
+      "startColor": "168FED",
+      "endColor": "16BCED",
+      "mainItem": {
+        "icon": "https://picsum.photos/600/430?random=10",
+        "title": "机票",
+        "url": "https://m.ctrip.com/webapp/flight/",
+        "statusBarColor": "72A0F0"
+
+      },
+      "item1": {
+        "icon": "https://picsum.photos/400/200?random=3",
+        "title": "海外酒店",
+        "url": "https://m.ctrip.com/webapp/hotel/oversea/"
+      },
+      "item2": {
+        "icon": "https://picsum.photos/400/200?random=4",
+        "title": "特价酒店",
+        "url": "https://m.ctrip.com/webapp/hotel/discount/"
+      },
+      "item3": {
+        "icon": "https://picsum.photos/400/200?random=3",
+        "title": "海外酒店",
+        "url": "https://m.ctrip.com/webapp/hotel/oversea/"
+      },
+      "item4": {
+        "icon": "https://picsum.photos/400/200?random=4",
+        "title": "特价酒店",
+        "url": "https://m.ctrip.com/webapp/hotel/discount/"
+      }
+    },
+    "travel": {
+      "startColor": "18C2AA",
+      "endColor": "18D557",
+      "mainItem": {
+        "icon": "https://picsum.photos/600/430?random=6",
+        "title": "旅游",
+        "url": "https://m.ctrip.com/webapp/vacations/",
+        "statusBarColor": "32A0F0"
+
+      },
+      "item1": {
+        "icon": "https://picsum.photos/100/100?random=3",
+        "title": "海外酒店",
+        "url": "https://m.ctrip.com/webapp/hotel/oversea/"
+      },
+      "item2": {
+        "icon": "https://picsum.photos/100/100?random=4",
+        "title": "特价酒店",
+        "url": "https://m.ctrip.com/webapp/hotel/discount/"
+      },
+      "item3": {
+        "icon": "https://picsum.photos/100/100?random=3",
+        "title": "海外酒店",
+        "url": "https://m.ctrip.com/webapp/hotel/oversea/"
+      },
+      "item4": {
+        "icon": "https://picsum.photos/100/100?random=4",
+        "title": "特价酒店",
+        "url": "https://m.ctrip.com/webapp/hotel/discount/"
+      }
+    }
+  },
+  "subNavList": [
+    {
+      "icon": "https://picsum.photos/100/100?random=7",
+      "title": "民宿客栈",
+      "url": "https://m.ctrip.com/webapp/inn/"
+    }
+  ],
+  "salesBox": {
+    "icon": "https://picsum.photos/100/100?random=8",
+    "moreUrl": "https://m.ctrip.com/webapp/sales/",
+    "bigCard1": {
+      "icon": "https://picsum.photos/400/200?random=9",
+      "title": "省钱特权",
+      "url": "https://m.ctrip.com/webapp/sales/promotion"
+    },
+    "bigCard2": {
+      "icon": "https://picsum.photos/400/200?random=10",
+      "title": "活动优惠",
+      "url": "https://m.ctrip.com/webapp/sales/activity"
+    },
+    "smallCard1": {
+      "icon": "https://picsum.photos/200/200?random=11",
+      "title": "优惠券",
+      "url": "https://m.ctrip.com/webapp/sales/coupon"
+    },
+    "smallCard2": {
+      "icon": "https://picsum.photos/200/200?random=12",
+      "title": "特惠酒店",
+      "url": "https://m.ctrip.com/webapp/sales/hotel"
+    },
+    "smallCard3": {
+      "icon": "https://picsum.photos/200/200?random=13",
+      "title": "优惠机票",
+      "url": "https://m.ctrip.com/webapp/sales/flight"
+    },
+    "smallCard4": {
+      "icon": "https://picsum.photos/200/200?random=14",
+      "title": "汽车票",
+      "url": "https://m.ctrip.com/webapp/bus/"
+    }
+  }
+}

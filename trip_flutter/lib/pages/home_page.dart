@@ -150,7 +150,7 @@ class _HomePageState extends State<HomePage>
 
   Future<void> _handleRefresh() async {
     try {
-      HomeModel? model = await HomeDao.fetch();
+      HomeModel? model = await HomeDao.fetchMock();
       if (model == null) {
         setState(() {
           _loading = false;

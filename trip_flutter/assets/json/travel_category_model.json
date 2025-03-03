@@ -1,0 +1,20 @@
+{
+  "tabs": [
+    {
+      "labelName": "热门",
+      "groupChannelCode": "hot"
+    },
+    {
+      "labelName": "推荐",
+      "groupChannelCode": "recommend"
+    },
+    {
+      "labelName": "国内游",
+      "groupChannelCode": "domestic"
+    },
+    {
+      "labelName": "国外游",
+      "groupChannelCode": "foreign"
+    }
+  ]
+}
